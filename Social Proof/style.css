@@ -1,0 +1,240 @@
+body
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-section
+{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+    height: 90%;
+    width: 80%;
+}
+
+#top-title
+{
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#top-title > h2
+{
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+    margin: 0px;
+}
+
+#top-title > p
+{
+    color: hsl(303, 10%, 53%);
+}
+
+.star-review
+{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
+    padding-right: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    margin: 10px 0px;
+}
+
+#reviews
+{
+    position:relative;
+    left: -50px;
+    
+}
+
+#besttech
+{
+    position: relative;
+    left: 50px;
+}
+
+
+
+#top-stars
+{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#testimonials
+{
+    grid-column: 1 / span 6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testimonial
+{
+    background-color: hsl(300, 43%, 22%);
+    width: 25%;
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+    font-size: 13px;
+}
+.testimonial-profile
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.testimonial-profile > img
+{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.profile-info p
+{
+    margin: 0px;
+}
+
+#colton
+{
+    position:relative;
+    top: -30px;
+}
+
+#anne
+{
+    position: relative;
+    top: 30px;
+}
+
+
+@media only screen and (max-width: 1306px){
+   
+    #top-title > h2
+    {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+   
+  .star-review{
+      width: 80%;
+  }
+
+  #top-title
+  {
+      margin-bottom: 50px;
+  }
+  
+  .testimonial
+  {
+      font-size: 10px;
+  }
+
+  .testimonial-profile > img
+  {
+      width: 40px;
+      height: 40px;
+      margin: 15px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 800px)
+{
+    body{
+        height: auto;
+        padding: 50px 0px;
+    }
+    #social-section
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #top-stars
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    .star-review
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        justify-content: center;
+        width: 90%;
+        padding: 20px 40px;
+        
+    }
+    .star-review > p{
+        margin: 0px;
+    }
+    #reviews
+    {
+        position: initial;
+    }
+
+    #besttech
+    {
+        position: initial;
+    }
+
+    #testimonials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+    }
+
+    .testimonial
+    {
+        position: initial;
+        margin: 10px 0px;
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    #colton
+    {
+        position: initial;
+    }
+
+    #anne
+    {
+        position: initial;
+    }
+
+
+}
